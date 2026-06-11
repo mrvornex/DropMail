@@ -3,9 +3,9 @@ import Link from "next/link";
 const links = [
   { href: "/features", label: "Features" },
   { href: "/faq", label: "FAQ" },
-  { href: "/about", label: "About" },
+  // { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
-  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
 ];
 
 export default function Footer() {
@@ -15,8 +15,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2.5 mb-2">
-              <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xs font-bold">D</div>
-              <span className="font-bold text-lg text-slate-900">Drop<span className="text-blue-600">Mail</span></span>
+              <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xs font-bold">I</div>
+              <span className="font-bold text-lg text-slate-900">Insta<span className="text-blue-600">Inbox</span></span>
             </div>
             <p className="text-sm text-slate-500">Free, anonymous & disposable email service.</p>
           </div>
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-400">
-          © {new Date().getFullYear()} DropMail. All rights reserved.
+          © {new Date().getFullYear()} InstaInbox. All rights reserved. — 100% Free & No Signup Required
         </div>
       </div>
     </footer>

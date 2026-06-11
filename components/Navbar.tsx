@@ -4,11 +4,12 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
-  { href: "/", label: "Home" },
+  // { href: "/", label: "Home" },
   { href: "/features", label: "Features" },
   { href: "/faq", label: "FAQ" },
-  { href: "/about", label: "About" },
+  // { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
 ];
 
 export default function Navbar() {
@@ -21,7 +22,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5 font-bold text-xl text-slate-900">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">I</div>
-            Inbo<span className="text-blue-600">Mail</span>
+            Insta<span className="text-blue-600">Inbox</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">

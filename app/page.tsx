@@ -4,18 +4,16 @@ const features = [
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
     title: "Auto Expiration",
-    desc: "Emails deleted after 48 hours. Zero footprint.",
+    desc: "Emails deleted after 1 hour. Zero footprint.",
   },
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
     title: "Instant Setup",
@@ -24,8 +22,7 @@ const features = [
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
     title: "Privacy First",
@@ -36,7 +33,6 @@ const features = [
 export default function HomePage() {
   return (
     <div>
-      {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="text-center mb-10">
@@ -74,7 +70,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats */}
       <section className="bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
@@ -82,7 +77,7 @@ export default function HomePage() {
               { value: "2M+", label: "Emails Generated" },
               { value: "850K+", label: "Users Worldwide" },
               { value: "4", label: "Domains Available" },
-              { value: "48h", label: "Auto Expiry" },
+              { value: "1hr", label: "Auto Expiry" },
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-2xl font-bold text-blue-600">{s.value}</div>
@@ -93,17 +88,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it works */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-3">How DropMail Works</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-3">How InstaInbox Works</h2>
           <p className="text-slate-500 max-w-xl mx-auto">Three simple steps to protect your inbox.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {[
-            { step: "01", title: "Get Your Address", desc: "Visit DropMail and instantly receive a random disposable email. No forms, no signup." },
+            { step: "01", title: "Get Your Address", desc: "Visit InstaInbox and instantly receive a random disposable email. No forms, no signup." },
             { step: "02", title: "Use It Anywhere", desc: "Use your temp address to sign up for websites, trials, or any online form." },
-            { step: "03", title: "Receive & Read", desc: "Emails appear in your inbox in real time. After 48 hours, everything auto-deletes." },
+            { step: "03", title: "Receive & Read", desc: "Emails appear in your inbox in real time. After 1 hour, everything auto-deletes." },
           ].map((item) => (
             <div key={item.step}>
               <div className="text-5xl font-bold text-blue-100 mb-3">{item.step}</div>
